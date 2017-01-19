@@ -1,0 +1,23 @@
+.footer {
+	.flex-box {
+		margin-top: 55px;
+		display: flex;
+		justify-content: space-between;
+
+		span {
+			color: $secondary_font_color;
+			font: 400 16px 'Lato', sans-serif;
+		}
+	}
+
+	.social-list li{
+		display: inline-block;
+
+		.fa {
+			padding-left: 25px;
+			color: #a5a5a5;
+			font-size: 17px;
+			cursor: pointer;
+		}
+	}
+}

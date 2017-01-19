@@ -68,7 +68,17 @@ body {
 
 @media (min-width: 1170px) {
   .container {
-    width: 75%;
+    width: 80%;
+    margin: 0 auto; } }
+
+@media (min-width: 1570px) {
+  .container {
+    width: 92%;
+    margin: 0 auto; } }
+
+@media (min-width: 1900px) {
+  .container {
+    width: 77%;
     margin: 0 auto; } }
 
 .primary-btn {
@@ -100,6 +110,20 @@ body {
     color: #ffffff;
     background: #38383a;
     transition: all .6s ease-in; }
+
+.load-btn {
+  margin-top: 35px;
+  display: block;
+  width: 100%;
+  height: 65px;
+  color: #8e8e8e;
+  font: 700 14px/65px "Merriweather Sans", sans-serif;
+  background: #38383a;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center; }
+  .load-btn .fa {
+    padding-right: 25px; }
 
 .header .logo a {
   color: #ffffff;
@@ -216,7 +240,7 @@ body {
   .content-box .flex-box {
     display: flex;
     flex-flow: row wrap;
-    justify-content: spce-between; }
+    justify-content: space-between; }
   .content-box .head-label {
     display: block;
     width: 90px;
@@ -250,7 +274,33 @@ body {
       text-align: center;
       border: 1px solid rgba(255, 255, 255, 0.7);
       border-radius: 50%; }
+  .content-box .functional-version-2 {
+    padding: 20px 35px 15px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none; }
+    .content-box .functional-version-2 .coments {
+      display: block;
+      width: 75px;
+      height: 35px;
+      font: 400 14px/35px "Merriweather", serif;
+      text-align: center;
+      border-radius: 30px;
+      margin: 0 12px 0 12px;
+      color: #cccccc;
+      border: 1px solid #cccccc; }
+    .content-box .functional-version-2 .fa-heart-o {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      border-radius: 50%;
+      color: #cccccc;
+      border: 1px solid #cccccc; }
   .content-box .col-1 {
+    flex-basis: 340px;
+    order: 1;
     background: #38383a;
     border-radius: 5px 4px 4px 5px; }
     .content-box .col-1 .post-head {
@@ -269,34 +319,87 @@ body {
       padding: 0 50px 20px 35px;
       color: #ffffff;
       font: 400 14px/26px "Merriweather", serif; }
-  .content-box .col-2 {
+  .content-box .col-2, .content-box .col-7 {
+    order: 1;
     border-radius: 5px 4px 4px 5px;
     background: #ffffff;
     display: flex;
     flex-basis: 715px; }
-    .content-box .col-2 .flex-box {
+    .content-box .col-2 .functional-version-2, .content-box .col-7 .functional-version-2 {
+      padding: 0; }
+    .content-box .col-2 .flex-box, .content-box .col-7 .flex-box {
       padding: 30px 30px 15px 35px;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between; }
-      .content-box .col-2 .flex-box .col-1-2 {
+      .content-box .col-2 .flex-box .col-1-2, .content-box .col-7 .flex-box .col-1-2 {
         max-width: 380px; }
-        .content-box .col-2 .flex-box .col-1-2 span {
+        .content-box .col-2 .flex-box .col-1-2 span, .content-box .col-7 .flex-box .col-1-2 span {
           background: #e52a40; }
-        .content-box .col-2 .flex-box .col-1-2 h3 {
+        .content-box .col-2 .flex-box .col-1-2 h3, .content-box .col-7 .flex-box .col-1-2 h3 {
           padding: 60px 0 30px 0;
           color: #38383a;
           font: 700 24px/36px "Merriweather", serif; }
-        .content-box .col-2 .flex-box .col-1-2 p {
+        .content-box .col-2 .flex-box .col-1-2 p, .content-box .col-7 .flex-box .col-1-2 p {
           padding-bottom: 20px;
           color: #656565;
           font: 400 14px/26px "Merriweather", serif; }
-    .content-box .col-2 .functional {
-      border: none; }
-      .content-box .col-2 .functional .coments {
-        margin: 0 12px 0 12px;
-        color: #cccccc;
-        border: 1px solid #cccccc; }
-      .content-box .col-2 .functional .fa-heart-o {
-        color: #cccccc;
-        border: 1px solid #cccccc; }
+  .content-box .col-3, .content-box .col-4, .content-box .col-5, .content-box .col-6 {
+    order: 1;
+    border-radius: 5px 4px 4px 5px;
+    background: #ffffff;
+    flex-basis: 340px; }
+    .content-box .col-3 .post-head, .content-box .col-4 .post-head, .content-box .col-5 .post-head, .content-box .col-6 .post-head {
+      padding: 30px 0 0 35px;
+      background: url("../../img/post-img-3.png") no-repeat;
+      border-radius: 5px 4px 0 0;
+      background-size: cover;
+      min-height: 185px; }
+      .content-box .col-3 .post-head span, .content-box .col-4 .post-head span, .content-box .col-5 .post-head span, .content-box .col-6 .post-head span {
+        background: #663399; }
+    .content-box .col-3 h3, .content-box .col-4 h3, .content-box .col-5 h3, .content-box .col-6 h3 {
+      padding: 30px 50px 20px 35px;
+      color: #38383a;
+      font: 700 24px/36px "Merriweather", serif; }
+    .content-box .col-3 p, .content-box .col-4 p, .content-box .col-5 p, .content-box .col-6 p {
+      padding: 0 50px 20px 35px;
+      color: #656565;
+      font: 400 14px/26px "Merriweather", serif; }
+  .content-box .col-4, .content-box .col-5, .content-box .col-6 {
+    order: 1; }
+    .content-box .col-4 .post-head, .content-box .col-5 .post-head, .content-box .col-6 .post-head {
+      background: url("../../img/post-img-4.png") no-repeat; }
+      .content-box .col-4 .post-head span, .content-box .col-5 .post-head span, .content-box .col-6 .post-head span {
+        background: #e87e04; }
+  .content-box .col-5 {
+    order: 1; }
+    .content-box .col-5 .post-head span {
+      background: #e87e04; }
+  .content-box .col-6 {
+    order: 2; }
+    .content-box .col-6 .post-head {
+      background: url("../../img/post-img-4.png") no-repeat; }
+      .content-box .col-6 .post-head span {
+        background: #e87e04; }
+  .content-box .col-7 {
+    order: 1; }
+    .content-box .col-7 .post-head {
+      background: url("../../img/post-img-4.png") no-repeat; }
+      .content-box .col-7 .post-head span {
+        background: #e87e04; }
+
+.footer .flex-box {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between; }
+  .footer .flex-box span {
+    color: #ffffff;
+    font: 400 16px 'Lato', sans-serif; }
+
+.footer .social-list li {
+  display: inline-block; }
+  .footer .social-list li .fa {
+    padding-left: 25px;
+    color: #a5a5a5;
+    font-size: 17px;
+    cursor: pointer; }
