@@ -1,0 +1,36 @@
+.primary-btn {
+	display: block;
+	width: 160px;
+	height: 35px;
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	border-radius: 30px;
+	color: $secondary_font_color;
+	font: 400 14px/35px $secondary_font;
+	text-align: center;
+	text-transform: uppercase;
+
+	&:hover {
+		color: #2e2e30;
+		background: $secondary_font_color;
+		transition: all .6s ease-in;
+	}
+}
+
+.secondary-btn {
+	display: block;
+	width: 160px;
+	height: 35px;
+	border: 1px solid #cccccc;
+	border-radius: 30px;
+	color: #cccccc;
+	font: 400 14px/35px $secondary_font;
+	text-align: center;
+	text-transform: uppercase;
+
+	&:hover {
+		color: $secondary_font_color;
+		background: $primary_font_color;
+		transition: all .6s ease-in;
+	}
+}
+

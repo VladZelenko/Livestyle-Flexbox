@@ -1,0 +1,72 @@
+
+
+.header {
+	.logo a {
+		color: $secondary_font_color;
+		font: 800 22px/26px $primary_font;
+	}
+
+	.flex-box {
+		height: 65px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+//==================Menu=======================
+
+.nav {
+	background: #38383a;
+	border-radius: 5px;
+	max-width: 500px;
+	li {display: inline-block;}
+
+	.top-nav-active {color: $secondary_font_color;}
+}
+
+.nav li a,
+#touch-menu {
+	display: block;
+	padding: 10px 15px;
+	color: #888888;
+	font: 700 13px/26px $primary_font;
+	text-transform: uppercase;
+}
+
+.nav li a:hover {
+	color: $secondary_font_color;
+	text-decoration: none;
+	transition: all .4s ease-in;
+}
+#touch-menu:hover {
+	color: $secondary_font_color;
+	transition: all .4s ease-in;
+}
+#touch-menu {display: none;}
+
+@media (min-width: 320px) and (max-width: 760px) {
+	.nav {display: none;
+		li a {
+			border-top: 1px solid #eee;
+			background: $secondary_font_color;
+			color: $secondary_font_color;
+
+			&:hover {
+				background: #f0f0f0;
+				color: $secondary_font_color;
+				border-left: 3px solid $secondary_font_color;
+				transition: all .4s ease-in;
+			}
+		}
+	}
+	.nav li:first-child a {border-top: none;}
+	#touch-menu {
+		display: flex;
+		justify-content: flex-end;
+
+		.fa-bars {font-size: 22px;}
+	}
+}
+	//======================================================
